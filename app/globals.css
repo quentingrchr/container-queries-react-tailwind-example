@@ -4,3 +4,50 @@
 
 body {
 }
+
+.grid-custom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr;
+  grid-row: 3 / -1;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.grid-custom > .child:nth-child(1) {
+  grid-column: 1 / 3;
+}
+
+/* target element after 5th element, even */
+.grid-custom > .child:nth-child(2n + 5) {
+  grid-column: 1 / 2;
+}
+
+/* target element after 5th element, odd */
+.grid-custom > .child:nth-child(2n + 6) {
+  grid-column: 2 / 3;
+}
+
+.grid-custom .sidebar {
+  grid-column: 3 / 4;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  .grid-custom {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  .grid-custom > .child {
+    grid-column: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-custom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
