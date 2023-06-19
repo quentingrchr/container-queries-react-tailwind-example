@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex flex-col">
       <header className="flex flex-col gap-5 h-10 w-full bg-gray-200"></header>
       <h1 className="text-2xl md:text-4xl font-bold text-center mt-10 mb-5">
-        Container Queries with React and Tailwind CSS
+        CSS container queries with React and Tailwind
       </h1>
       <div className="grid-custom p-10 sm:p-5 ">
         {articles.map((article) => (
