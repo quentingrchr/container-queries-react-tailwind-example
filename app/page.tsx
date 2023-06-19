@@ -12,7 +12,7 @@ export default function Home() {
         {articles.map((article) => (
           <Article key={article.id} {...article} className="@container child" />
         ))}
-        <aside className="sidebar bg-teal-500 p-5 text-xl font-bold">
+        <aside className="sidebar bg-teal-500 p-5 text-xl font-bold rounded-xl">
           {"I'm an additional sidebar"}
         </aside>
       </div>

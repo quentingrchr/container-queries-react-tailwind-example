@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       containers: {
-        xs: "190px",
-        sm: "250px",
-        lg: "390px",
-        xl: "450px",
+        "xs": "190px",
+        "sm": "250px",
+        "lg": "390px",
+        "xl": "450px",
         "2xl": "500px",
         "3xl": "800px",
         "4xl": "900px",

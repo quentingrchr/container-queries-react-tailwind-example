@@ -31,7 +31,6 @@ body {
   grid-column: 3 / 4;
   grid-row-start: 2;
   grid-row-end: 8;
-  border-radius: 5px;
 }
 
 @media screen and (max-width: 750px) {
