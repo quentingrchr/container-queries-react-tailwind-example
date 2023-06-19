@@ -40,11 +40,14 @@ body {
     grid-column-gap: 10px;
   }
   .grid-custom > .child {
-    grid-column: auto;
+    grid-column: auto !important;
+  }
+  .sidebar {
+    display: none;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .grid-custom {
     display: flex;
     flex-direction: column;
